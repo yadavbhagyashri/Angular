@@ -17,16 +17,16 @@
           <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
         </li>
 
-        <li class="dropdown nav-item" appDropdown *ngIf="isAuthenticated">
-          <a style="cursor: pointer;" class="dropdown-toggle" role="button"
-            >Manage <span class="caret"></span
-          ></a>
-          <ul class="dropdown-menu">
-            <li class="nav-item">
-              <a style="cursor: pointer;" (click)="onSaveData()">Save Data</a>
+        <li class="nav-item dropdown" *ngIf="isAuthenticated">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Manage
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="onSaveData()">Save Data</a>
             </li>
-            <li class="nav-item">
-              <a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a>
+            <li>
+              <a class="dropdown-item" style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a>
             </li>
           </ul>
         </li>
