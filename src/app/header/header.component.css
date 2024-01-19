@@ -1,3 +1,13 @@
-.nav-item{
+.nav-item{ 
     padding-left: 5px;
+    margin-left: 10px;
 }
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set your desired text color */
+  }
