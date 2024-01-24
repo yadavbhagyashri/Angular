@@ -140,6 +140,9 @@ export class AuthService {
       case 'INVALID_PASSWORD':
         errorMessage = 'This password is not correct.';
         break;
+      case 'INVALID_LOGIN_CREDENTIALS':
+        errorMessage = 'Invalid Login Credential';
+        break;
     }
     return throwError(errorMessage);
   }
